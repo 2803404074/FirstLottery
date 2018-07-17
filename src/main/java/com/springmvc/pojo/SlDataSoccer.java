@@ -2,7 +2,7 @@ package com.springmvc.pojo;
 
 import java.util.Date;
 
-public class DataSoccer {
+public class SlDataSoccer {
     private String id;
     private String eventId;
     private String dataId;
@@ -32,12 +32,12 @@ public class DataSoccer {
     private Date createdAt;
     private Date updatedAt;
 
-    public DataSoccer() {
+    public SlDataSoccer() {
     }
 
     @Override
     public String toString() {
-        return "DataSoccer{" +
+        return "SlDataSoccer{" +
                 "id='" + id + '\'' +
                 ", eventId='" + eventId + '\'' +
                 ", dataId='" + dataId + '\'' +
@@ -69,7 +69,7 @@ public class DataSoccer {
                 '}';
     }
 
-    public DataSoccer(String id, String eventId, String dataId, String numberOfPeriods, String lotteryType, String dataType, String period, String numId, String numName, String startDate, String startTime, String eventDate, String eventType, String eventTypeAbrv, String home, String homeAbrv, String visitor, String visitorAbrv, String eventBgColor, String contents, String homeScore, String visitorScore, String homeScoreHalf, String visitorScoreHalf, String created, String updated, Date createdAt, Date updatedAt) {
+    public SlDataSoccer(String id, String eventId, String dataId, String numberOfPeriods, String lotteryType, String dataType, String period, String numId, String numName, String startDate, String startTime, String eventDate, String eventType, String eventTypeAbrv, String home, String homeAbrv, String visitor, String visitorAbrv, String eventBgColor, String contents, String homeScore, String visitorScore, String homeScoreHalf, String visitorScoreHalf, String created, String updated, Date createdAt, Date updatedAt) {
         this.id = id;
         this.eventId = eventId;
         this.dataId = dataId;

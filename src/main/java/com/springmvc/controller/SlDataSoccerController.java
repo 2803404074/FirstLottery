@@ -1,8 +1,7 @@
 package com.springmvc.controller;
 
-import com.springmvc.pojo.DataSoccer;
-import com.springmvc.service.DataSoccerService;
-import net.sf.json.JSONObject;
+import com.springmvc.pojo.SlDataSoccer;
+import com.springmvc.service.SlDataSoccerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -13,18 +12,18 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;
 
 @Controller
-public class DataSoccerController {
+public class SlDataSoccerController {
 
     @Resource
-    DataSoccerService dataSoccerService;
+    SlDataSoccerService dataSoccerService;
 
     @RequestMapping("/getInfo")
     @ResponseBody
-    public DataSoccer login(HttpServletRequest request, HttpServletResponse response) {
+    public SlDataSoccer login(HttpServletRequest request, HttpServletResponse response) {
         try {
             response.setContentType("text/html;charset=utf-8");
             request.setCharacterEncoding("utf-8");
-            DataSoccer dataSoccer = dataSoccerService.findById("fb201806225024");
+            SlDataSoccer dataSoccer = dataSoccerService.findById("fb201806225024");
             if(dataSoccer!=null){
                 System.out.println(dataSoccer);
                 return dataSoccer;

@@ -1,10 +1,8 @@
 package com.springmvc.test;
 
-import com.springmvc.dao.AdminMapper;
-import com.springmvc.dao.DataSoccerMapper;
-import com.springmvc.pojo.Admin;
-import com.springmvc.pojo.DataSoccer;
-import com.springmvc.service.DataSoccerService;
+import com.springmvc.dao.SlDataSoccerMapper;
+import com.springmvc.pojo.SlDataSoccer;
+import com.springmvc.service.SlDataSoccerService;
 import net.sf.json.JSONObject;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.log4j.Logger;
@@ -20,9 +18,9 @@ public class UserTest {
     private Logger logger = Logger.getRootLogger();
     private ApplicationContext context;
     private SqlSessionFactory sessionFactory;
-    private DataSoccerMapper mapper;
+    private SlDataSoccerMapper mapper;
     @Resource
-    DataSoccerService dataSoccerService;
+    SlDataSoccerService dataSoccerService;
     @Before
     public void init(){
         String configLocation = "spring-mybatis.xml";
@@ -32,9 +30,9 @@ public class UserTest {
 
     @Test
     public void testClien(){
-        mapper=sessionFactory.openSession().getMapper(DataSoccerMapper.class);
+        mapper=sessionFactory.openSession().getMapper(SlDataSoccerMapper.class);
 
-        DataSoccer ret = mapper.findById("fb201806225024");
+        SlDataSoccer ret = mapper.findById("fb201806225024");
         if(ret!=null){
             logger.info("成功");
             JSONObject dataObject = JSONObject.fromObject(ret);
