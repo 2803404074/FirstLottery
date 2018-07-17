@@ -160,4 +160,26 @@ public class SlUser {
     public void setuPhone(String uPhone) {
         this.uPhone = uPhone == null ? null : uPhone.trim();
     }
+
+    public SlUser(Integer uId, String uName, String uAccount, String uPassword, String uPhone) {
+        this.uId = uId;
+        this.uName = uName;
+        this.uAccount = uAccount;
+        this.uPassword = uPassword;
+        this.uPhone = uPhone;
+    }
+
+    public SlUser() {
+    }
+
+    @Override
+    public String toString() {
+        return "SlUser{" +
+                "uId=" + uId +
+                ", uName='" + uName + '\'' +
+                ", uAccount='" + uAccount + '\'' +
+                ", uPassword='" + uPassword + '\'' +
+                ", uPhone='" + uPhone + '\'' +
+                '}';
+    }
 }

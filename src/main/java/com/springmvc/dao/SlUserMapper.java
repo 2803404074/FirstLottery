@@ -18,4 +18,6 @@ public interface SlUserMapper {
      * @mbggenerated
      */
     int insertSelective(SlUser record);
+
+    SlUser findUserById(int uId);
 }

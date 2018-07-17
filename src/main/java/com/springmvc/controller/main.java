@@ -1,33 +1,22 @@
 package com.springmvc.controller;
-import com.springmvc.cache.LoginUserCache;
-import com.springmvc.pojo.UserInfo;
-import com.springmvc.service.UserService;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-import org.apache.http.HttpResponse;
+import com.springmvc.service.SlUserService;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.commons.CommonsMultipartFile;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 import javax.annotation.Resource;
 import javax.servlet.ServletException;
-import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
 import java.io.*;
 import java.util.*;
 
 @Controller
 public class main {
     @Resource
-    UserService userService;
+    SlUserService userService;
 
     @RequestMapping("/")
     @ResponseBody
@@ -54,25 +43,6 @@ public class main {
 //        LoginUserCache.put(userInfo,30*60);
         //判断用户的角色，如果是admin则赋予全部权限，否则根据用户id取得角色id获取相应得权限
         return "用户不存在";
-
-    }
-
-    //@RequestMapping("/regist")
-    @ResponseBody
-    public String regist(HttpServletRequest request, HttpServletResponse response) {
-        String account = request.getParameter("account");
-        String realName = request.getParameter("realName");
-        String pass = request.getParameter("pass");
-        String phone = request.getParameter("phone");
-        String email = request.getParameter("email");
-        String address = request.getParameter("address");
-        UserInfo userInfo = new UserInfo(account, realName, pass, phone, email, address);
-        UserInfo ret = userService.addUser(userInfo);
-        if (ret != null) {
-            System.out.println("插入成功" + account + "," + realName + "," + pass + "," + phone + "," + email + "," + address);
-            return "注册成功";
-        }
-        return "注册失败";
 
     }
 
