@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springmvc.dao.UserMapper" >
+    <resultMap id="ResultMap" type="com.springmvc.pojo.UserInfo" >
+        <id column="u_id" property="userId" jdbcType="INTEGER" />
+        <result column="u_name" property="userName" jdbcType="VARCHAR" />
+        <result column="u_realName" property="realName" jdbcType="VARCHAR" />
+        <result column="u_password" property="userPassword" jdbcType="VARCHAR" />
+        <result column="u_phone" property="userPhone" jdbcType="VARCHAR" />
+        <result column="u_email" property="userEmail" jdbcType="VARCHAR" />
+        <result column="u_address" property="userAddress" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+    id, name, password
+  </sql>
+    <!--根据id查询-->
+    <select id="selectById" resultMap="ResultMap">
+    select * from mydatabase.user where u_id = #{userId}
+    </select>
+
+    <!--根据用户名查询-->
+    <select id="selectByName" resultMap="ResultMap">
+    select * from mydatabase.user where u_name = #{userName}
+    </select>
+
+    <!--用户注册-->
+    <insert id="addUser" parameterType="com.springmvc.pojo.UserInfo">
+        insert into mydatabase.user (u_name,u_realName,u_password,u_phone,u_email,u_address)
+        values(#{userName}, #{realName}, #{userPassword}, #{userPhone}, #{userEmail}, #{userAddress})
+    </insert>
+
+    <!--用户登陆-->
+    <select id="Login" resultMap="ResultMap">
+        select * from mydatabase.user where u_name = #{0} and u_password = #{1}
+    </select>
+
+
+
+</mapper>
