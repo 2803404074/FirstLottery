@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
-@Service("SlResultNumService")
+@Service("SlDataBasketballService")
 public class SlDataBasketballService {
     @Resource
     private SlDataBasketballMapper basketballMapper;
