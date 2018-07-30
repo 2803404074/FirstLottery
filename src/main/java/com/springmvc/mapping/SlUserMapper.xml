@@ -14,9 +14,8 @@
   </resultMap>
 
   <insert id="insert" parameterType="com.springmvc.pojo.SlUser">
-    insert into Sl_User (u_id, u_name, u_account, 
-      u_password, u_phone)
-    values (#{uId,jdbcType=INTEGER}, #{uName,jdbcType=VARCHAR}, #{uAccount,jdbcType=VARCHAR}, 
+    insert into Sl_User (u_name,u_account,u_password,u_phone)
+    values (#{uName,jdbcType=VARCHAR}, #{uAccount,jdbcType=VARCHAR},
       #{uPassword,jdbcType=VARCHAR}, #{uPhone,jdbcType=VARCHAR})
   </insert>
 
@@ -63,8 +62,8 @@
     select * from `default@default`.Sl_User where u_id = #{uId}
     </select>
 
-  <!--根据id查询-->
+  <!--根据用户名密码查询-->
   <select id="login" resultMap="BaseResultMap">
-    select * from `default@default`.Sl_User where u_name = #{0} and u_password=#{1}
+    select * from `default@default`.Sl_User where u_account = #{0} and u_password=#{1}
     </select>
 </mapper>

@@ -35,6 +35,17 @@ public class SlDataSoccer {
     public SlDataSoccer() {
     }
 
+    public SlDataSoccer(String id, String numId, String startDate, String startTime, String eventType, String home, String visitor, String eventBgColor) {
+        this.id = id;
+        this.numId = numId;
+        this.startDate = startDate;
+        this.startTime = startTime;
+        this.eventType = eventType;
+        this.home = home;
+        this.visitor = visitor;
+        this.eventBgColor = eventBgColor;
+    }
+
     @Override
     public String toString() {
         return "SlDataSoccer{" +

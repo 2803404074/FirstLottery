@@ -28,9 +28,9 @@ public interface SlUserMapper {
 
     /**
      * 登陆接口
-     * @param uName
+     * @param uAccount
      * @param uPassword
      * @return
      */
-    boolean login(String uName,String uPassword);
+    SlUser login(String uAccount,String uPassword);
 }

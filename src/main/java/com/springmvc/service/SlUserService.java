@@ -30,9 +30,9 @@ public class SlUserService {
     }
 
     //登陆
-    public boolean login(String uName,String uPassword){
-        boolean ret = this.slUserMapper.login(uName,uPassword);
-        if(ret){
+    public SlUser login(String uName,String uPassword){
+        SlUser ret = this.slUserMapper.login(uName,uPassword);
+        if(ret!=null){
             return ret;
         }
         return ret;

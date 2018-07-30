@@ -161,8 +161,7 @@ public class SlUser {
         this.uPhone = uPhone == null ? null : uPhone.trim();
     }
 
-    public SlUser(Integer uId, String uName, String uAccount, String uPassword, String uPhone) {
-        this.uId = uId;
+    public SlUser(String uName, String uAccount, String uPassword, String uPhone) {
         this.uName = uName;
         this.uAccount = uAccount;
         this.uPassword = uPassword;

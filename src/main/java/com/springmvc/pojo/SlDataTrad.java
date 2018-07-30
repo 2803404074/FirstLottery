@@ -98,4 +98,7 @@ public class SlDataTrad {
     public void setUpdatedat(Date updatedat) {
         this.updatedat = updatedat;
     }
+
+    public SlDataTrad() {
+    }
 }

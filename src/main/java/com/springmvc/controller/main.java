@@ -15,36 +15,12 @@ import java.util.*;
 
 @Controller
 public class main {
-    @Resource
-    SlUserService userService;
-
     @RequestMapping("/")
     @ResponseBody
     public String index() {
         return "hello world";
     }
 
-    @RequestMapping("/login")
-    @ResponseBody
-    public String login(HttpServletRequest request, HttpServletResponse response) {
-        try {
-            response.setContentType("text/html;charset=utf-8");
-            request.setCharacterEncoding("utf-8");
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-//        String account = request.getParameter("account");
-//        String pass = request.getParameter("pass");
-//        UserInfo userInfo = userService.userLogin(account, pass);
-//        if (userInfo != null) {
-//            return "登陆成功";
-//        }
-//        //保存信息
-//        LoginUserCache.put(userInfo,30*60);
-        //判断用户的角色，如果是admin则赋予全部权限，否则根据用户id取得角色id获取相应得权限
-        return "用户不存在";
-
-    }
 
     @ResponseBody
     @RequestMapping(value = "/upload", method = RequestMethod.POST)

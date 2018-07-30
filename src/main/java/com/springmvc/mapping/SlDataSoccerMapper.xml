@@ -37,4 +37,8 @@
     select * from `default@default`.Sl_data_soccer where id = #{id}
     </select>
 
+    <select id="findByNmber" resultMap="dataMap">
+    SELECT * FROM `default@default`.Sl_data_soccer where number_of_periods like #{numberOfPeriods}"%";
+    </select>
+
 </mapper>

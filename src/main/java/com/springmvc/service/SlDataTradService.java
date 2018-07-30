@@ -6,6 +6,7 @@ import com.springmvc.pojo.SlDataTradWithBLOBs;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service("SlDataTradService")
 public class SlDataTradService {
@@ -18,5 +19,13 @@ public class SlDataTradService {
             return ret;
         }
         return 0;
+    }
+
+    public List findByDate(String starTime){
+        List<SlDataTradWithBLOBs> ret= this.tradMapper.findByDate(starTime);
+        if(ret!=null){
+            return ret;
+        }
+        return null;
     }
 }
