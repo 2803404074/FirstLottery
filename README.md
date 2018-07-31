@@ -1,11 +1,7 @@
 # TestSSM  maven搭建ssm框架
 
 第一步：
-拷贝本项目到本地
-
-
 ![](https://gitee.com/uploads/images/2018/0330/092527_a74bedfe_1117056.png "屏幕截图.png")
-
 
 第二步：
 用intellij idea打开本项目，待加载项目完毕后，检查maven所添加的依赖是否成功。
