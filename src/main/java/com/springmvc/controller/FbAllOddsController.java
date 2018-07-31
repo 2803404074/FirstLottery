@@ -24,9 +24,9 @@ import java.util.*;
 @Controller
 public class FbAllOddsController {
     private JSONObject jsonObject;
-    private Map<String, String> map = new HashMap<String, String>();
-    List<Object> lists = new ArrayList<Object>();
-    JSONArray array = new JSONArray();
+    private List<Object> lists;
+    private JSONArray array;
+    private PrintWriter out;
     @Resource
     SlDataSoccerService dataSoccerService;
 
@@ -36,8 +36,7 @@ public class FbAllOddsController {
         try {
             response.setContentType("text/html;charset=utf-8");
             request.setCharacterEncoding("utf-8");
-            PrintWriter out = response.getWriter();
-            jsonObject = new JSONObject();
+            init(response);
             String numberOfPeriods = request.getParameter("numberOfPeriods");
             List<SlDataSoccer> list = dataSoccerService.findByNmber(numberOfPeriods);
             for (SlDataSoccer slDataSoccer : list) {
@@ -54,11 +53,23 @@ public class FbAllOddsController {
             out.close();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
+    //初始化
+    private void init(HttpServletResponse response) {
+        try {
+            jsonObject = new JSONObject();
+            out = response.getWriter();
+            array = new JSONArray();
+            lists = new ArrayList<Object>();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    //解析
     private void jsonInfo(String str) {
         JSONObject jsonObject = JSONObject.fromObject(str);//第二层
         Iterator iterator = jsonObject.keys();
@@ -72,22 +83,22 @@ public class FbAllOddsController {
             String value = jsonObject.getString(key);
             //id
             if("id".equals(key)){
-                FBSpfInfo.setId(value);
-                FBBfInfo.setId(value);
-                FBBqcInfo.setId(value);
-                FBJqsInfo.setId(value);
-                fb_all.setId("all"+value);
+//                FBSpfInfo.setMatchID(value);
+//                FBBfInfo.setMatchID(value);
+//                FBBqcInfo.setMatchID(value);
+//                FBJqsInfo.setMatchID(value);
+                fb_all.setId(value);
             }
             //不让球赔率
             if (key.equals("current_spf")) {
                 JSONObject changName = getJson(value,0);
-                FBSpfInfo.setCurrent_spf(value);
+                FBSpfInfo.setCurrent_spf(changName);
                 fb_all.setFBSpfInfo(FBSpfInfo);
             }
             //让球赔率
             if (key.equals("current_rqspf")) {
                 JSONObject changName = getJson(value,0);
-                FBSpfInfo.setCurrent_rqspf(value);
+                FBSpfInfo.setCurrent_rqspf(changName);
                 fb_all.setFBSpfInfo(FBSpfInfo);
             }
             if("handicap".equals(key)){
@@ -98,19 +109,19 @@ public class FbAllOddsController {
             //总进球数赔率
             if (key.equals("current_jqs")) {
                 JSONObject changName = getJson(value,2);
-                FBJqsInfo.setCurrent_jqs(value);
+                FBJqsInfo.setCurrent_jqs(changName);
                 fb_all.setFBJqsInfo(FBJqsInfo);
             }
             //半全场赔率
             if (key.equals("current_bqc")) {
                 JSONObject changName = getJson(value,3);
-                FBBqcInfo.setCurrent_bqc(value);
+                FBBqcInfo.setCurrent_bqc(changName);
                 fb_all.setFBBqcInfo(FBBqcInfo);
             }
             //比分赔率
             if (key.equals("current_bf")) {
                 JSONObject changName = getJson(value,4);
-                FBBfInfo.setCurrent_bf(value);
+                FBBfInfo.setCurrent_bf(changName);
                 fb_all.setFBBfInfo(FBBfInfo);
             }
         }
@@ -121,6 +132,7 @@ public class FbAllOddsController {
         }
     }
 
+    //转义
     private JSONObject getJson(String json, int index) {
         JSONObject jsonObjectss = new JSONObject();
         JSONObject jsonObject2 = JSONObject.fromObject(json);//第三层
@@ -147,9 +159,9 @@ public class FbAllOddsController {
                     JsonTransformation jf = new JsonTransformation();
                     String keyName = jf.bfKeyName(key2);//将key值转义
                     jsonObjectss.put(keyName,value2);
-                    break;}
-                    default:
-                        break;
+                    break;
+                }
+                    default: break;
             }
         }
         System.out.println("转换后："+jsonObjectss.toString());

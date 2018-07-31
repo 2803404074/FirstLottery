@@ -4,18 +4,18 @@ package com.springmvc.model;
  * 比分id和赔率模型
  */
 public class FB_BfInfo {
-    private String id;
+    private String matchID;
     private Object current_bf;
 
     public FB_BfInfo() {
     }
 
-    public String getId() {
-        return id;
+    public String getMatchID() {
+        return matchID;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setMatchID(String matchID) {
+        this.matchID = matchID;
     }
 
     public Object getCurrent_bf() {

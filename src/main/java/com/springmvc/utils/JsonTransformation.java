@@ -83,15 +83,23 @@ public class JsonTransformation {
      */
     public String jqsKeyName(String key){
         switch (key){
-            case "1":{keyName="0goal";break;}
-            case "2":{keyName="1goal";break;}
-            case "3":{keyName="2goal";break;}
-            case "4":{keyName="3goal";break;}
-            case "5":{keyName="4goal";break;}
-            case "6":{keyName="5goal";break;}
-            case "7":{keyName="6goal";break;}
-            case "8":{keyName="7+goal";break;}
+            case "1":{keyName="0goals";break;}
+            case "2":{keyName="1goals";break;}
+            case "3":{keyName="2goals";break;}
+            case "4":{keyName="3goals";break;}
+            case "5":{keyName="4goals";break;}
+            case "6":{keyName="5goals";break;}
+            case "7":{keyName="6goals";break;}
+            case "8":{keyName="7+goals";break;}
         }
+        return keyName;
+    }
+
+    /**
+     * id转义
+     */
+    public String idName(String key){
+        key = "MatchID";
         return keyName;
     }
 

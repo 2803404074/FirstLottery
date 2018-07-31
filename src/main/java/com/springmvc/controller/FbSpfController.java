@@ -23,8 +23,9 @@ import java.util.*;
 @Controller
 public class FbSpfController {
     private JSONObject jsonObject;
-    List<Object> lists = new ArrayList<Object>();
-    JSONArray array = new JSONArray();
+    private List<Object> lists;
+    private JSONArray array;
+    private PrintWriter out;
     @Resource
     SlDataSoccerService dataSoccerService;
 
@@ -34,10 +35,8 @@ public class FbSpfController {
         try {
             response.setContentType("text/html;charset=utf-8");
             request.setCharacterEncoding("utf-8");
-            PrintWriter out = response.getWriter();
-            jsonObject = new JSONObject();
+            init(response);
             String numberOfPeriods = request.getParameter("numberOfPeriods");
-
             List<SlDataSoccer> list = dataSoccerService.findByNmber(numberOfPeriods);
             for (SlDataSoccer slDataSoccer : list) {
                 if (slDataSoccer != null) {
@@ -59,6 +58,7 @@ public class FbSpfController {
         }
     }
 
+    //解析
     private void jsonInfo(String str) {
         JSONObject jsonObject = JSONObject.fromObject(str);//第二层
         Iterator iterator = jsonObject.keys();
@@ -73,7 +73,7 @@ public class FbSpfController {
             }
             //id
             if("id".equals(key)){
-                FBSpfInfo.setId(value);
+                FBSpfInfo.setMatchID(value);
             }
             //获取让球和不让求的赔率
             if (key.equals("current_spf")) {
@@ -94,7 +94,7 @@ public class FbSpfController {
             array.add(lists.get(i));
         }
     }
-
+    //key值转义
     private JSONObject getJson(String json, int index) {
         JSONObject jsonObjectss = new JSONObject();
         JSONObject jsonObject2 = JSONObject.fromObject(json);//第三层
@@ -113,5 +113,18 @@ public class FbSpfController {
         }
         System.out.println("转换后："+jsonObjectss.toString());
         return jsonObjectss;
+    }
+
+
+    //初始化
+    private void init(HttpServletResponse response){
+        try {
+            out = response.getWriter();
+            jsonObject = new JSONObject();
+            array = new JSONArray();
+            lists = new ArrayList<Object>();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

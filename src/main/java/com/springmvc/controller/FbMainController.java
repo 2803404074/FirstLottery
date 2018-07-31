@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.*;
 
@@ -22,20 +20,21 @@ import java.util.*;
 @Controller
 public class FbMainController {
     private JSONObject jsonObject;
-    List<Object> lists = new ArrayList<Object>();
-    JSONArray array = new JSONArray();
+    private List<Object> lists;
+    private JSONArray array;
     @Resource
     private
     SlDataSoccerService dataSoccerService;
 
     @RequestMapping("/getMainInfo")
     @ResponseBody
-    public void getInfo(HttpServletRequest request, HttpServletResponse response) {
+    public JSONObject getInfo(HttpServletRequest request, HttpServletResponse response) {
         try {
             response.setContentType("text/html;charset=utf-8");
             request.setCharacterEncoding("utf-8");
-            PrintWriter out = response.getWriter();
             jsonObject = new JSONObject();
+            array = new JSONArray();
+            lists = new ArrayList<Object>();
             String numberOfPeriods = request.getParameter("numberOfPeriods");
             List<SlDataSoccer> list = dataSoccerService.findByNmber(numberOfPeriods);
             for (SlDataSoccer slDataSoccer : list) {
@@ -58,15 +57,10 @@ public class FbMainController {
                     System.out.println("查询失败");
                 }
             }
-            System.out.println("json信息"+array.toString());
             jsonObject.put("mainInfo",array);
-            out.println(jsonObject);
-            out.flush();
-            out.close();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
+        return jsonObject;
     }
 }

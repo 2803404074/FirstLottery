@@ -25,7 +25,6 @@ public class TraditionFootBall {
     private JSONObject jsonObject;
     private List<Object> lists = new ArrayList<Object>();
     private JSONArray jsonArray;
-
     @Resource
     private
     SlDataTradService service;
@@ -64,7 +63,6 @@ public class TraditionFootBall {
             out.println(jsonObject);
             out.flush();
             out.close();
-
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (IOException e) {

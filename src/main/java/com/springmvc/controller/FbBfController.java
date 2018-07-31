@@ -23,9 +23,9 @@ import java.util.*;
 @Controller
 public class FbBfController {
     private JSONObject jsonObject;
-    List<Object> lists = new ArrayList<Object>();
-    JSONArray array = new JSONArray();
-
+    private List<Object> lists;
+    private JSONArray array;
+    private PrintWriter out;
     @Resource
     SlDataSoccerService dataSoccerService;
 
@@ -35,17 +35,15 @@ public class FbBfController {
         try {
             response.setContentType("text/html;charset=utf-8");
             request.setCharacterEncoding("utf-8");
-            PrintWriter out = response.getWriter();
-            jsonObject = new JSONObject();
+            init(response);
             String numberOfPeriods = request.getParameter("numberOfPeriods");
             List<SlDataSoccer> list = dataSoccerService.findByNmber(numberOfPeriods);
             for (SlDataSoccer slDataSoccer : list) {
                 if (slDataSoccer != null) {
                     String str = slDataSoccer.getContents();//contents字段为json字符串，需解析
-                    jsonInfo(str);//解析
-
+                    jsonInfo(str);
                 } else {
-                    System.out.println("查询失败");
+                    return;
                 }
             }
             jsonObject.put("bfOdds",array);
@@ -54,11 +52,22 @@ public class FbBfController {
             out.close();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
+    private void init(HttpServletResponse response) {
+        try {
+            out = response.getWriter();
+            jsonObject = new JSONObject();
+            lists= new ArrayList<Object>();
+            array = new JSONArray();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    //解析
     private void jsonInfo(String str) {
         JSONObject jsonObject = JSONObject.fromObject(str);//第二层
         Iterator iterator = jsonObject.keys();
@@ -68,7 +77,7 @@ public class FbBfController {
             String value = jsonObject.getString(key);
             //id
             if("id".equals(key)){
-                FBBfInfo.setId(value);
+                FBBfInfo.setMatchID(value);
             }
             //比分赔率
             if ("current_bf".equals(key)) {
@@ -82,7 +91,7 @@ public class FbBfController {
             array.add(lists.get(i));
         }
     }
-
+    //转义
     private JSONObject getJson(String json, int index) {
         JSONObject jsonObjectss = new JSONObject();
         JSONObject jsonObject2 = JSONObject.fromObject(json);//第三层

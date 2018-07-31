@@ -4,15 +4,15 @@ package com.springmvc.model;
  * 胜平负id赔率模型
  */
 public class FB_SpfInfo {
-    private String id;
+    private String matchID;
     private String handicap;
     private Object current_spf;
     private Object current_rqspf;
 
 
 
-    public FB_SpfInfo(String id, String handicap, String current_spf, String current_rqspf) {
-        this.id = id;
+    public FB_SpfInfo(String matchID, String handicap, String current_spf, String current_rqspf) {
+        this.matchID = matchID;
         this.handicap = handicap;
         this.current_spf = current_spf;
         this.current_rqspf = current_rqspf;
@@ -21,12 +21,12 @@ public class FB_SpfInfo {
     public FB_SpfInfo() {
     }
 
-    public String getId() {
-        return id;
+    public String getMatchID() {
+        return matchID;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setMatchID(String matchID) {
+        this.matchID = matchID;
     }
 
     public String getHandicap() {

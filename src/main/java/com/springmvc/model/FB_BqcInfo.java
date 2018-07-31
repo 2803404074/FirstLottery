@@ -4,18 +4,18 @@ package com.springmvc.model;
  * 半全场id和赔率模型
  */
 public class FB_BqcInfo {
-    private String id;
+    private String matchID;
     private Object current_bqc;
 
     public FB_BqcInfo() {
     }
 
-    public String getId() {
-        return id;
+    public String getMatchID() {
+        return matchID;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setMatchID(String matchID) {
+        this.matchID = matchID;
     }
 
     public Object getCurrent_bqc() {

@@ -9,7 +9,6 @@ import net.sf.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -24,8 +23,9 @@ import java.util.*;
 @Controller
 public class FbJqsController {
     private JSONObject jsonObject;
-    private JSONArray array = new JSONArray();
-    List<Object> lists = new ArrayList<Object>();
+    private JSONArray array;
+    private List<Object> lists;
+    private PrintWriter out;
     @Resource
     SlDataSoccerService dataSoccerService;
 
@@ -35,8 +35,7 @@ public class FbJqsController {
         try {
             response.setContentType("text/html;charset=utf-8");
             request.setCharacterEncoding("utf-8");
-            PrintWriter out = response.getWriter();
-            jsonObject = new JSONObject();
+            init(response);
             String numberOfPeriods = request.getParameter("numberOfPeriods");
             List<SlDataSoccer> list = dataSoccerService.findByNmber(numberOfPeriods);
             for (SlDataSoccer slDataSoccer : list) {
@@ -53,11 +52,10 @@ public class FbJqsController {
             out.close();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
+    //解析
     private void jsonInfo(String str) {
         JSONObject jsonObject = JSONObject.fromObject(str);//第二层
         Iterator iterator = jsonObject.keys();
@@ -68,7 +66,7 @@ public class FbJqsController {
 
             //id
             if("id".equals(key)){
-                FBJqsInfo.setId(value);
+                FBJqsInfo.setMatchID(value);
             }
             //进球数
             if (key.equals("current_jqs")) {
@@ -85,6 +83,7 @@ public class FbJqsController {
         }
     }
 
+    //转义
     private JSONObject getJson(String json, int index) {
         JSONObject jsonObjectss = new JSONObject();
         JSONObject jsonObject2 = JSONObject.fromObject(json);//第三层
@@ -103,5 +102,17 @@ public class FbJqsController {
         }
         System.out.println("转换后："+jsonObjectss.toString());
         return jsonObjectss;
+    }
+
+    //初始化
+    private void init(HttpServletResponse response){
+        try {
+            lists = new ArrayList<Object>();
+            jsonObject = new JSONObject();
+            array = new JSONArray();
+            out = response.getWriter();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

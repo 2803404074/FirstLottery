@@ -8,11 +8,11 @@
          version="3.0">
   <display-name>Archetype Created Web Application</display-name>
 
-<!--  <welcome-file-list>
-    <welcome-file>*/</welcome-file>
-   &lt;!&ndash; <welcome-file>index.jsp</welcome-file>
-    <welcome-file>Login.jsp</welcome-file>&ndash;&gt;
-  </welcome-file-list>-->
+  <welcome-file-list>
+    <welcome-file>tc.jsp</welcome-file>
+   <!-- <welcome-file>index.jsp</welcome-file>
+    <welcome-file>Login.jsp</welcome-file>-->
+  </welcome-file-list>
 
   <!-- Spring和mybatis的配置文件 -->
   <context-param>

@@ -4,23 +4,23 @@ package com.springmvc.model;
  * 进球数id和赔率模型
  */
 public class FB_JqsInfo {
-    private String id;
+    private String matchID;
     private Object current_jqs;
 
     public FB_JqsInfo() {
     }
 
-    public FB_JqsInfo(String id, Object current_jqs) {
-        this.id = id;
+    public FB_JqsInfo(String matchID, Object current_jqs) {
+        this.matchID = matchID;
         this.current_jqs = current_jqs;
     }
 
-    public String getId() {
-        return id;
+    public String getMatchID() {
+        return matchID;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setMatchID(String matchID) {
+        this.matchID = matchID;
     }
 
     public Object getCurrent_jqs() {
