@@ -102,5 +102,97 @@ public class JsonTransformation {
         key = "MatchID";
         return keyName;
     }
+/**
+ * 篮球转义
+ *
+ */
+public String bbdxfKeyName(String key){
+        switch (key) {
+            case "1" :{keyName="small";break;}//小分
+            case "2" :{keyName="large";break;}//大分
+            case "preset_score" :{keyName="expect";break;}//预期
+        }
+        return keyName;
+    }
+
+    /**
+     *篮球胜负/让分胜负转义
+     */
+    public String bbsfKeyName(String key,int index){
+        if(index==0) {
+            switch (key) {
+                case "0": {
+                    keyName = "loss";
+                    break;
+                }//负
+                case "3": {
+                    keyName = "win";
+                    break;
+                }//胜
+            }
+        }
+        if(index==1) {
+            switch (key) {
+                case "0": {
+                    keyName = "loss";
+                    break;
+                }//负
+                case "3": {
+                    keyName = "win";
+                    break;
+                }//胜
+                case "handicap": {
+                    keyName = "handicap";
+                    break;
+                }//让分
+            }
+        }
+        return keyName;
+    }
+
+    /**
+     * 篮球胜分差转义
+     * @param key
+     * @return
+     */
+    public String bbSfcKeyName(String key){
+            switch (key){
+                case "1":{keyName = "h1-5";break;}
+                case "2":{keyName = "h6-10";break;}
+                case "3":{keyName = "h11-15";break;}
+                case "4":{keyName = "h16-20";break;}
+                case "5":{keyName = "h21-25";break;}
+                case "6":{keyName = "h26+";break;}
+                case "7":{keyName = "v1-5";break;}
+                case "8":{keyName = "v6-10";break;}
+                case "9":{keyName = "v11-15";break;}
+                case "10":{keyName = "v16-20";break;}
+                case "11":{keyName = "v21-25";break;}
+                case "12":{keyName = "v26+";break;}
+            }
+        return keyName;
+    }
+    /**
+     * 传统足彩胜负赔率转义
+     *
+     */
+    public String trSfKeyName(String key){
+        switch (key){
+            case "a" :{
+                keyName="win";
+                break;
+            }
+            case "d" :{
+                keyName="draw";
+                break;
+            }
+            case "h" :{
+                keyName="loss";
+               break;
+            }
+            default:break;
+        }
+        return keyName;
+    }
 
 }

@@ -28,7 +28,7 @@ public class TraditionFootBall {
     @Resource
     private
     SlDataTradService service;
-    @RequestMapping("/getTrdFbMainInfo")
+    @RequestMapping("/gettrdfootball/main")
     @ResponseBody
     public void getInfo(HttpServletRequest request, HttpServletResponse response) {
         try {
@@ -37,7 +37,7 @@ public class TraditionFootBall {
             PrintWriter out = response.getWriter();
             jsonObject = new JSONObject();
             jsonArray = new JSONArray();
-            String date = request.getParameter("date");
+            String date = request.getParameter("termnumber");
             List<SlDataTradWithBLOBs> list = service.findByDate(date);
             for (SlDataTradWithBLOBs trad : list) {
                 if (trad != null) {

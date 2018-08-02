@@ -257,6 +257,6 @@
     </trim>
   </insert>
   <select id="findByDate" resultMap="ResultMapWithBLOBs">
-    SELECT * FROM `default@default`.Sl_data_trad where start_date =#{startDate};
+    SELECT * FROM `default@default`.Sl_data_trad where number_of_periods like #{numberOfPeriods}"%";
     </select>
 </mapper>

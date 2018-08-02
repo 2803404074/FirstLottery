@@ -1,10 +1,12 @@
 package com.springmvc.service;
 
 import com.springmvc.dao.SlDataBasketballMapper;
+import com.springmvc.pojo.SlDataBasketball;
 import com.springmvc.pojo.SlDataBasketballWithBLOBs;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service("SlDataBasketballService")
 public class SlDataBasketballService {
@@ -17,5 +19,13 @@ public class SlDataBasketballService {
             return ret;
         }
         return 0;
+    }
+
+    public List findById(String id){
+        List<SlDataBasketballWithBLOBs> list =  this.basketballMapper.findById(id);
+        if (list!=null){
+            return list;
+        }
+        return null;
     }
 }

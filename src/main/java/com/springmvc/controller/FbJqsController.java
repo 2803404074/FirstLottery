@@ -29,7 +29,7 @@ public class FbJqsController {
     @Resource
     SlDataSoccerService dataSoccerService;
 
-    @RequestMapping("/getOddsJqsInfo")
+    @RequestMapping("/getfootball/jqs/odds")
     @ResponseBody
     public void getInfo(HttpServletRequest request, HttpServletResponse response) {
         try {

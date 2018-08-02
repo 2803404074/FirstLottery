@@ -26,7 +26,7 @@ public class FbMainController {
     private
     SlDataSoccerService dataSoccerService;
 
-    @RequestMapping("/getMainInfo")
+    @RequestMapping("/getfootball/main")
     @ResponseBody
     public JSONObject getInfo(HttpServletRequest request, HttpServletResponse response) {
         try {

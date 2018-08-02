@@ -21,8 +21,8 @@ public class SlDataTradService {
         return 0;
     }
 
-    public List findByDate(String starTime){
-        List<SlDataTradWithBLOBs> ret= this.tradMapper.findByDate(starTime);
+    public List findByDate(String number){
+        List<SlDataTradWithBLOBs> ret= this.tradMapper.findByDate(number);
         if(ret!=null){
             return ret;
         }

@@ -29,7 +29,7 @@ public class FbSpfController {
     @Resource
     SlDataSoccerService dataSoccerService;
 
-    @RequestMapping("/getOddsSpfInfo")
+    @RequestMapping("/getfootball/spf/odds")
     @ResponseBody
     public void getInfo(HttpServletRequest request, HttpServletResponse response) {
         try {

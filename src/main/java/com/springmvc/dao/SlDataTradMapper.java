@@ -25,6 +25,6 @@ public interface SlDataTradMapper {
     int insertSelective(SlDataTradWithBLOBs record);
 
 
-    //根据日期查询
-    List<SlDataTradWithBLOBs> findByDate(String starTime);
+    //根据期号查询
+    List<SlDataTradWithBLOBs> findByDate(String number);
 }

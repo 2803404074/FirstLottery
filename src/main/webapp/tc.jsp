@@ -13,13 +13,14 @@
         <h2>欢迎登录体育彩票系统</h2>
     </div>    <!--面板的主要内容-->
     <form class="panel-content" action="/login.do">
+        <span>${MSG}</span>
         <div class="int">
             <label><img src="images/user.png" ></label>
-            <input type="text" id="phone" placeholder="你的手机号/用户名">
+            <input type="text" id="phone" name="account" placeholder="你的手机号/用户名">
         </div>
         <div class="int">
             <label><img src="images/user.png" ></label>
-            <input type="password" id="pass" placeholder="输入密码">
+            <input type="password" id="pass" name="password" placeholder="请输入密码">
         </div>
         <!--配置信息-->
         <div class="setting">
@@ -34,13 +35,7 @@
         <div class="reg">还没账号?<a href="#">马上注册</a>
         </div>
     </form>
-    <!--面板的底部-->
-    <div class="panel-footer">
-        <span>社交账号登录:</span>
-        <img src="images/user.png">
-        <img src="images/user.png">
-        <img src="images/user.png">
-    </div>
+
 </div>
 </body>
 <style>
@@ -156,18 +151,6 @@
         color: orangered;
         text-decoration: none;
         margin-left: 5px;
-    }
-    #panel .panel-footer{
-        height: 40px;
-        line-height: 40px;
-    }
-    #panel .panel-footer img{
-        /*设置图片居中*/
-        vertical-align: middle;
-    }
-    #panel .panel-footer span{
-        /*设置文字垂直居中*/
-        vertical-align: middle;
     }
 </style>
 </html>

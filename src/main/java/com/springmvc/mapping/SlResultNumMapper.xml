@@ -470,4 +470,8 @@
       </if>
     </trim>
   </insert>
+
+  <select id="findNumById" resultMap="ResultMapWithBLOBs">
+    SELECT number_of_periods,result_number FROM `default@default`.Sl_result_num where id like #{id}"%";
+    </select>
 </mapper>

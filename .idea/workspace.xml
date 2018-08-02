@@ -7,7 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d991f8a8-caf6-453c-89df-a4b3e3933050" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/tc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBdxf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBmain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBsf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBsfc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/NumLottery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/TrOdds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/model/BB_MainInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/model/BB_RFSF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/model/BB_SF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/常用快捷键.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbAllOddsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbAllOddsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbBfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbBfController.java" afterDir="false" />
@@ -15,14 +26,21 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbJqsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbJqsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbMainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbSpfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbSpfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/SlUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/SlUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/TraditionFootBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/TraditionFootBall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_BfInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_BfInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_BqcInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_BqcInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_JqsInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_JqsInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_SpfInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_SpfInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/controller/ImgLoderAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataBasketballMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataBasketballMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataTradMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataTradMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlResultNumMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlResultNumMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataBasketballMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataBasketballMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataTradMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataTradMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlResultNumMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlResultNumMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataBasketballService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataBasketballService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataTradService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataTradService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlResultNumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlResultNumService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springmvc/utils/JsonTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springmvc/utils/JsonTransformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/imgloder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tc.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springmvc/controller/main.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,46 +67,27 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="sldatabase" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sldatabase" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sldatabase" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="default@default: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FbAllOddsController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbAllOddsController.java">
+      <file leaf-file-name="NumLottery.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/NumLottery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2133">
-              <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FbBfController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbBfController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="95" column="51" lean-forward="true" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
-              <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tc.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/tc.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="63" column="11" lean-forward="true" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
+            <state relative-caret-position="297">
+              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -114,57 +113,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlResultNumMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/imgloder.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/token/JWT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/token/LogicInterface.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/token/OAuthTokenManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataSoccerMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataSoccerMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataSoccerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/SlDataSoccerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetSlDataSoccerMainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/GetSlDataSoccerOddsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/SlDataSoccerJqsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/pojo/SlUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/SlUserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlUserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlUserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/pojo/SlDataSoccer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/pojo/MainInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/BqcInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/JqsInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/MainInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/SpfInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/BfInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataTradService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataTradMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataTradMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/test/UserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/pojo/SlDataTrad.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/TradMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/pojo/SlDataTradWithBLOBs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/T_FB_Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbMainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/TraditionFootBall.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_BfInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbBfController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_BqcInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbBqcController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_JqsInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbJqsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_SpfInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbSpfController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_all.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbAllOddsController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/imgloder.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/tc.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/user.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/main.java" />
+        <option value="$PROJECT_DIR$/src/main/tips.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/SlUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataBasketballMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataBasketballMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataBasketballService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BbMainInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/BB_RFSF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BbRfSf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BbSf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/BB_SF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BbDxf.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springmvc/utils/JsonTransformation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/model/BB_MainInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBsfc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBall.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBdxf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBmain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBsf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlResultNumMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlResultNumService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/Num52.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlResultNumMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbAllOddsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbBfController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbBqcController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbJqsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbMainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbSpfController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/NumLottery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataTradMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataTradMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataTradService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/TraditionFootBall.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springmvc/controller/TrOdds.java" />
       </list>
     </option>
   </component>
@@ -203,9 +202,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="160" />
-    <option name="width" value="1767" />
-    <option name="height" value="1047" />
+    <option name="x" value="197" />
+    <option name="y" value="14" />
+    <option name="width" value="1507" />
+    <option name="height" value="1037" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,6 +214,17 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="slproject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="example" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,33 +320,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="token" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="slproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="slproject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="slproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="slproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="slproject" type="58d84e3e:PackageViewProjectNode" />
-              <item name="example" type="616d4139:PackageViewModuleNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -358,10 +350,11 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14204545" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\getDataProject\slproject\src\main\webapp" />
       <recent name="D:\getDataProject\slproject\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -578,7 +571,9 @@
       <workItem from="1532660638194" duration="9040000" />
       <workItem from="1532910699677" duration="25229000" />
       <workItem from="1532997431037" duration="11128000" />
-      <workItem from="1533016180396" duration="6218000" />
+      <workItem from="1533016180396" duration="12946000" />
+      <workItem from="1533083367744" duration="17748000" />
+      <workItem from="1533169798738" duration="22508000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1531808582639</created>
@@ -615,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532937638193</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完善竞彩足球接口，接口数据规范。">
+      <created>1533023122920</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1533023122920</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -651,34 +653,35 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171722000" />
+    <option name="totallyTimeSpent" value="218706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.28277355" />
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32936078" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.059168443" />
+      <window_info anchor="right" id="Database" order="5" weight="0.114072494" />
       <window_info id="Structure" order="1" sideWeight="0.5005599" side_tool="true" weight="0.2242236" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2881907" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42903575" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.2654388" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49946696" weight="0.33044422" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32936078" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21018419" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.24160346" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4994401" visible="true" weight="0.19296375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4994401" visible="true" weight="0.21748401" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -703,209 +706,15 @@
     <MESSAGE value="逆向工程生成所需要的model、dao、mapper，并且编写了各个mapper的service的插入实现。" />
     <MESSAGE value="SlDataSoceerController的代码实现，主要是获取数据库的数据，并且解析。" />
     <MESSAGE value="更新json数据接口的规范" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新json数据接口的规范" />
+    <MESSAGE value="完善竞彩足球接口，接口数据规范。" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善竞彩足球接口，接口数据规范。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/token/JWT.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/token/LogicInterface.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/token/OAuthTokenManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ccf72cec-1e4a-405a-b0d2-ca49e85ed73f/schema/default&amp;at;default/table/Sl_User">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ccf72cec-1e4a-405a-b0d2-ca49e85ed73f/schema/default&amp;at;default/table/Sl_data_soccer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-generator-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="35" column="57" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/pojo/SlUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="163" column="83" selection-start-line="163" selection-start-column="83" selection-end-line="163" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="66" column="59" selection-start-line="66" selection-start-column="59" selection-end-line="66" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="28" column="61" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/SlUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/nginx.conf" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/pojo/SlDataSoccer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataSoccerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataSoccerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataSoccerMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataTradService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/pojo/SlDataTrad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataTradMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataTradMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="61" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/test/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="44" column="69" lean-forward="true" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/cache/NewsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/cache/LoginUserCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/model/T_FB_Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/pojo/SlDataTradWithBLOBs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ccf72cec-1e4a-405a-b0d2-ca49e85ed73f/schema/default&amp;at;default/table/Sl_data_trad">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_BfInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -922,12 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,11 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -963,29 +761,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/TraditionFootBall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-351">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbMainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ccf72cec-1e4a-405a-b0d2-ca49e85ed73f/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="65" lean-forward="true" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/model/FB_all.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1001,59 +778,256 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-54">
-          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <caret line="1" column="65" lean-forward="true" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/tc.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="63" column="11" lean-forward="true" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/utils/JsonTransformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2592">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbJqsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-971">
-          <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        <state relative-caret-position="351">
+          <caret line="22" column="79" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
           <folding>
-            <element signature="method#getJson#0;class#FbJqsController#0" />
-            <element signature="method#init#0;class#FbJqsController#0" />
+            <element signature="n#style#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbSpfController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/user.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-          <folding>
-            <element signature="method#getJson#0;class#FbSpfController#0" />
-          </folding>
+        <state relative-caret-position="27">
+          <caret line="1" column="65" lean-forward="true" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/SlUserController.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/pojo/SlDataBasketball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/pojo/SlDataBasketballWithBLOBs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="59" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataSoccerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataBasketballService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataBasketballMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/常用快捷键.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ccf72cec-1e4a-405a-b0d2-ca49e85ed73f/schema/default&amp;at;default/table/Sl_data_basketball">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/model/BB_RFSF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/BbRfSf.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/model/BB_SF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/utils/JsonTransformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="108" column="39" selection-start-line="108" selection-start-column="39" selection-end-line="108" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/model/BB_MainInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBdxf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBsf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBsfc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/pojo/SlResultNumWithBLOBs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/SlResultNumService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlResultNumMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataBasketballMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="233" column="38" lean-forward="true" selection-start-line="233" selection-start-column="38" selection-end-line="233" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBmain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataSoccerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="40" column="98" lean-forward="true" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlResultNumMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="474" column="101" selection-start-line="474" selection-start-column="101" selection-end-line="474" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/BBall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="115" column="42" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbAllOddsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbBfController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbBqcController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="36" />
+        <state relative-caret-position="270">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
             <element signature="method#init#0;class#FbBqcController#0" />
             <element signature="method#getJson#0;class#FbBqcController#0" />
@@ -1061,20 +1035,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbBfController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbJqsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="95" column="51" lean-forward="true" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
+        <state relative-caret-position="254">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#FbJqsController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbMainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbAllOddsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/FbSpfController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2133">
-          <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+        <state relative-caret-position="303">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/ImgLoderAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/mapping/SlDataTradMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="259" column="100" lean-forward="true" selection-start-line="259" selection-start-column="100" selection-end-line="259" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/dao/SlDataTradMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/service/SlDataTradService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/TraditionFootBall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="39" column="58" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/TrOdds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="43" column="53" lean-forward="true" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springmvc/controller/NumLottery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1085,17 +1119,17 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="jpa-descriptors" />
               <type id="artifact" />
+              <type id="jpa-descriptors" />
               <type id="javaee-facet-resources" />
               <type id="library" />
             </show-content>
           </artifact-editor>
-          <last-edited>gxtc</last-edited>
+          <last-edited>example:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.16447371" />
+                <option value="0.14204545" />
                 <option value="0.5" />
               </list>
             </option>

@@ -1,20 +1,23 @@
 package com.springmvc.controller;
-import com.springmvc.service.SlUserService;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
-import javax.annotation.Resource;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.Calendar;
+import java.util.UUID;
 
 @Controller
-public class main {
+public class ImgLoderAction {
     @RequestMapping("/")
     @ResponseBody
     public String index() {

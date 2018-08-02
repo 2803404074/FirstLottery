@@ -30,7 +30,7 @@ public class FbAllOddsController {
     @Resource
     SlDataSoccerService dataSoccerService;
 
-    @RequestMapping("/getAllOddsInfo")
+    @RequestMapping("/getfootball/all/odds")
     @ResponseBody
     public void getInfo(HttpServletRequest request, HttpServletResponse response) {
         try {

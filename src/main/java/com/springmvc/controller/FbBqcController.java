@@ -32,7 +32,7 @@ public class FbBqcController {
     @Resource
     SlDataSoccerService dataSoccerService;
 
-    @RequestMapping("/getOddsBqcInfo")
+    @RequestMapping("/getfootball/bqc/odds")
     @ResponseBody
     public void getInfo(HttpServletRequest request, HttpServletResponse response) {
         try {

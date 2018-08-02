@@ -5,6 +5,8 @@ import com.springmvc.pojo.SlResultNumWithBLOBs;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service("SlResultNumService")
 public class SlResultNumService {
@@ -17,5 +19,13 @@ public class SlResultNumService {
             return ret;
         }
         return 0;
+    }
+
+    public List findNumById(String id){
+        List<SlResultNumWithBLOBs> list = slResultNumMapper.findNumById(id);
+        if(list!=null){
+            return list;
+        }
+        return null;
     }
 }
