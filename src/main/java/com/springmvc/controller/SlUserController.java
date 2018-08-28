@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 用户登陆、注册类ssdasd
+ * 用户登陆、注册类ssdasdadsad
  */
 @Controller
 public class SlUserController {
