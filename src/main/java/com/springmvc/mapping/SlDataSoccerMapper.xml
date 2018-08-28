@@ -33,8 +33,9 @@
         <result column="updatedAt" property="updatedAt" javaType="java.util.Date" jdbcType="DATE" />
     </resultMap>
     <!--根据id查询-->
-    <select id="findById" resultMap="dataMap">
-    select * from `default@default`.Sl_data_soccer where id = #{id}
+    <select id="findByDate" resultMap="dataMap">
+    select cast(left(number_of_periods, 8) as date), s.* from  `default@default`.Sl_data_soccer s
+  where cast(left(number_of_periods, 8) as date) >= #{date};
     </select>
 
     <select id="findByNmber" resultMap="dataMap">
